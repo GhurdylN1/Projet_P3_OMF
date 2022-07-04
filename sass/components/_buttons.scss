@@ -1,0 +1,12 @@
+.btn-search{
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+    background-image: linear-gradient(#f898dd, #9356dc); /* changer plus tard en mixin*/
+    color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
