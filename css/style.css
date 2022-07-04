@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header img {
+  width: 35%;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
