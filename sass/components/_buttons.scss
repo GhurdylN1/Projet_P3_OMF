@@ -6,7 +6,7 @@
     padding: 15px 30px;
     cursor: pointer;
     margin: 20px 0 0 0;
-    background-image: linear-gradient(#f898dd, #9356dc); /* changer plus tard en mixin*/
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356dc); /* changer plus tard en mixin*/
     color: white;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
