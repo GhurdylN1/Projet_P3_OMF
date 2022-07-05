@@ -1,0 +1,19 @@
+@keyframes bars {
+    0% {
+      transform: scaleY(0.5);
+    }
+    100%{
+      transform: scaleY(1.0);
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes apparition {
+     from {
+       opacity: 100%;
+     }
+     to {
+       opacity: 0%;
+       visibility: hidden;
+     }
+  }  
