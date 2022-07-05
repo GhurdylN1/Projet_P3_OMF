@@ -74,7 +74,8 @@ html {
   height: 100%;
   width: 15px;
   border-radius: 30px;
-  animation: bars 1000ms backwards infinite ease-in-out alternate;
+  animation: bars 1000ms backwards ease-in-out alternate;
+  animation-iteration-count: 5;
 }
 .load__bar--1 {
   animation-delay: 200ms;
