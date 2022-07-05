@@ -5,4 +5,4 @@ $clr-tertiary: #99E2D0;
 $size-load-bar: 15px;
 $num-bars: 5;
 $anim-dur: 1000ms;
-$anim-delay: $anim-dur / 5;
+$anim-delay: calc($anim-dur / 5)

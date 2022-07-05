@@ -1,8 +1,15 @@
 @keyframes bars {
     0% {
+      opacity: 0;
       transform: scaleY(0.5);
     }
-    100%{
+    25% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
       transform: scaleY(1.0);
       opacity: 0%;
     }

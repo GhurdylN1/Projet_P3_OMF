@@ -1,6 +1,13 @@
 @keyframes bars {
   0% {
+    opacity: 0;
     transform: scaleY(0.5);
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     transform: scaleY(1);
@@ -75,7 +82,7 @@ html {
   width: 15px;
   border-radius: 30px;
   animation: bars 1000ms backwards ease-in-out alternate;
-  animation-iteration-count: 5;
+  animation-iteration-count: 6;
 }
 .load__bar--1 {
   animation-delay: 200ms;

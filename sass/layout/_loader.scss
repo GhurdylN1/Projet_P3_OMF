@@ -22,7 +22,7 @@
           width: $size-load-bar;
           border-radius: 30px;
           animation: bars $anim-dur backwards ease-in-out alternate;
-          animation-iteration-count: 5;
+          animation-iteration-count: 6;
           @for $i from 1 through $num-bars {
           &--#{$i} {
              animation-delay: $anim-delay * $i;
