@@ -53,7 +53,8 @@ html {
 }
 
 .header img {
-  width: 45%;
+  width: 60%;
+  max-width: 650px;
   margin: 20px 0;
 }
 
@@ -67,22 +68,22 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: apparition 1500ms 4s ease-in-out forwards;
+  animation: apparition 1500ms 3s ease-in-out forwards;
 }
 
 .load {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: space-evenly;
 }
 .load__bar {
   background-image: linear-gradient(to bottom, #FF79DA, #9356dc, #99E2D0);
   height: 100%;
-  width: 15px;
+  width: 10px;
   border-radius: 30px;
   animation: bars 1000ms backwards ease-in-out alternate;
-  animation-iteration-count: 6;
+  animation-iteration-count: 4.5;
 }
 .load__bar--1 {
   animation-delay: 200ms;
