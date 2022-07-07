@@ -6,7 +6,7 @@
     padding: 15px 30px;
     cursor: pointer;
     margin: 20px 0 0 0;
-    background-image: linear-gradient(to bottom right, #FF79DA, #9356dc); /* changer plus tard en mixin*/
+    background-image: linear-gradient(to bottom right, $clr-secondary, $clr-primary); /* changer plus tard en mixin*/
     color: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);/*changer plus tard en variable - $btn-shadow*/
     &:hover{
