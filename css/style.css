@@ -33,6 +33,30 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h3 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-family: Shrikhand, sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(135, 135, 135);
+}
+
 .btn-search {
   border: none;
   color: white;
@@ -43,7 +67,26 @@ html {
   margin: 20px 0 0 0;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356dc); /* changer plus tard en mixin*/
   color: white;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /*changer plus tard en variable - $btn-shadow*/
+}
+.btn-search:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /*changer plus tard en variable - $btn-shadow-hover*/
+}
+
+.bloc-function button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: rgb(248, 248, 248);
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /*changer plus tard en variable - $btn-shadow*/
+}
+.bloc-function button:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /*changer plus tard en variable - $btn-shadow-hover*/
+  background-color: rgba(147, 86, 220, 0.2); /*changer plus tard en variable - $btn-hover*/
 }
 
 .header {
@@ -152,6 +195,94 @@ html {
   text-align: center;
   background-color: rgb(248, 248, 248);
   padding: 40px;
+}
+
+.function-menu {
+  display: block;
+  margin: 40px 15px 15px 15px;
+}
+
+.bloc-function {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.restaurants {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: rgb(248, 248, 248);
+}
+
+.restaurants h1 {
+  margin-left: 15px;
+}
+
+.bloc-rest {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.card-rest {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.card-rest-img {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  max-height: 250px;
+  flex-grow: 1;
+  box-shadow: 0 0 15px #f2f2f2;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+.card-rest-img:hover {
+  transform: scale(0.9);
+}
+
+.img-rest {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  height: 70%;
+}
+
+.card-rest-img-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 15px;
+  gap: 2px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(60, 60, 60);
+  padding: 25px;
+  padding-top: 20px;
+  gap: 10px;
+}
+footer a {
+  color: white;
+}
+footer i {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
