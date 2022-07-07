@@ -10,4 +10,19 @@
     gap: 20px;
     padding: 5px;
     margin-top: 15px;
+    & i{
+        padding-right: 20px;
+    }
+}
+
+.numb-btn-function{
+    position: absolute;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: $clr-primary;
+    display: grid;
+    align-items: center;
+    transform: translate(-125%, -30%);
 }
