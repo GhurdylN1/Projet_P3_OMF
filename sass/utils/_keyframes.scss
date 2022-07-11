@@ -24,3 +24,22 @@
        visibility: hidden;
      }
   }
+
+  @keyframes heart-anim {
+    0% {
+      stroke: transparent;
+      fill: url(#lg-heart);
+      opacity: 0%;
+    }
+    33% {
+      opacity: 33%;
+    }
+    66% {
+      opacity: 66%;
+    }
+    100% {
+      stroke: transparent;
+      fill: url(#lg-heart);
+      opacity: 100%;
+    }
+  }
