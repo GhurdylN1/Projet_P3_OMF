@@ -68,6 +68,8 @@
               fill: transparent;
               stroke-width: 6;
               stroke: grey;
+              stroke-dasharray: 1560;
+              stroke-dashoffset: 0;
               &:active {
                 animation: heart-anim 2s ease-in-out forwards;
               }

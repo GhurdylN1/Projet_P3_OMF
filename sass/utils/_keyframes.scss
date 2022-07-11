@@ -27,19 +27,29 @@
 
   @keyframes heart-anim {
     0% {
-      stroke: transparent;
+      stroke: $clr-tertiary;
+      stroke-dashoffset: 0;
+    }
+    25% {
+      stroke: $clr-tertiary;
+      stroke-dashoffset: 1560;
+      fill: transparent;
+    }
+    50% {
+      stroke: $clr-tertiary;
+      stroke-dashoffset: 3120;
       fill: url(#lg-heart);
-      opacity: 0%;
+      fill-opacity: 15%
     }
-    33% {
-      opacity: 33%;
-    }
-    66% {
-      opacity: 66%;
+    75%{
+      stroke-dashoffset: 3120;
+      stroke: none;
+      fill: url(#lg-heart);
+      fill-opacity: 25%
     }
     100% {
-      stroke: transparent;
+      stroke: none;
       fill: url(#lg-heart);
-      opacity: 100%;
+      fill-opacity: 100%;
     }
   }
