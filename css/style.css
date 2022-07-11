@@ -25,16 +25,17 @@
 }
 @keyframes heart-anim {
   0% {
-    stroke: #99E2D0;
+    stroke: #9356DC;
+    stroke-width: 15;
     stroke-dashoffset: 0;
   }
   25% {
-    stroke: #99E2D0;
+    stroke: #9356DC;
     stroke-dashoffset: 1560;
     fill: transparent;
   }
   50% {
-    stroke: #99E2D0;
+    stroke: #9356DC;
     stroke-dashoffset: 3120;
     fill: url(#lg-heart);
     fill-opacity: 15%;
@@ -129,13 +130,18 @@ p {
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
-
 .header img {
   width: 60%;
   max-width: 650px;
   margin: 20px 0;
+}
+.header i {
+  position: absolute;
+  left: 20px;
+  font-size: 25px;
 }
 
 .load-container {
@@ -335,6 +341,15 @@ p {
 }
 #restaurants .card-rest .card-rest-img-text {
   margin: 15px 15px 0 15px;
+}
+
+.menu .rest-img {
+  height: 170px;
+}
+.menu .rest-img img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 footer {

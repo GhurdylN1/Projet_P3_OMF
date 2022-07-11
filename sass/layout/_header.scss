@@ -1,10 +1,18 @@
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-}
-.header img {
+
+  & img {
   width: 60%;
   max-width: 650px;
   margin: 20px 0;
+  }
+
+  & i {
+    position:absolute;
+    left: 20px;
+    font-size: 25px;
+  }
 }
