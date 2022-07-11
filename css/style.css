@@ -38,18 +38,18 @@
     stroke: #9356DC;
     stroke-dashoffset: 3120;
     fill: url(#lg-heart);
-    fill-opacity: 15%;
+    opacity: 15%;
   }
   75% {
     stroke-dashoffset: 3120;
     stroke: none;
     fill: url(#lg-heart);
-    fill-opacity: 25%;
+    opacity: 25%;
   }
   100% {
     stroke: none;
     fill: url(#lg-heart);
-    fill-opacity: 100%;
+    opacity: 100%;
   }
 }
 * {
@@ -352,7 +352,7 @@ p {
 }
 .menu .rest-img img {
   width: 100%;
-  max-height: 300px;
+  max-height: 200px;
   object-fit: cover;
 }
 .menu .menu-dishes {
