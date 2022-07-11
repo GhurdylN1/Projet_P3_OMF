@@ -26,7 +26,7 @@
 @keyframes heart-anim {
   0% {
     stroke: #9356DC;
-    stroke-width: 15;
+    stroke-width: 9;
     stroke-dashoffset: 0;
   }
   25% {
@@ -343,13 +343,44 @@ p {
   margin: 15px 15px 0 15px;
 }
 
+.menu h1 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 25px;
+}
 .menu .rest-img {
-  height: 170px;
+  height: 50vw;
 }
 .menu .rest-img img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
+}
+.menu .menu-dishes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(248, 248, 248);
+  border-radius: 35px 35px 0 0;
+  padding: 15px 15px;
+}
+.menu .menu-dishes .rest-title {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+.menu .menu-dishes .rest-title .heart-icon {
+  cursor: pointer;
+  width: 30px;
+}
+.menu .menu-dishes .rest-title .heart-icon path {
+  fill: transparent;
+  stroke-width: 6;
+  stroke: grey;
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+.menu .menu-dishes .rest-title .heart-icon path:active {
+  animation: heart-anim 2s ease-in-out forwards;
 }
 
 footer {
