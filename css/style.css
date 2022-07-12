@@ -52,6 +52,15 @@
     opacity: 100%;
   }
 }
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(35%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -86,7 +95,7 @@ p {
   color: rgb(135, 135, 135);
 }
 
-.btn-search {
+.btn-gradient {
   border: none;
   color: white;
   cursor: pointer;
@@ -98,7 +107,7 @@ p {
   color: white;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /*changer plus tard en variable - $btn-shadow*/
 }
-.btn-search:hover {
+.btn-gradient:hover {
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /*changer plus tard en variable - $btn-shadow-hover*/
 }
 
@@ -164,7 +173,7 @@ p {
   justify-content: space-evenly;
 }
 .load__bar {
-  background-image: linear-gradient(to bottom, #FF79DA, #9356dc, #99E2D0);
+  background-image: linear-gradient(to bottom, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
   height: 100%;
   width: 10px;
   border-radius: 30px;
@@ -177,7 +186,7 @@ p {
 .load__bar--1-inv {
   animation-delay: 200ms;
   animation-direction: alternate-reverse;
-  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
+  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
 }
 .load__bar--2 {
   animation-delay: 400ms;
@@ -185,7 +194,7 @@ p {
 .load__bar--2-inv {
   animation-delay: 400ms;
   animation-direction: alternate-reverse;
-  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
+  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
 }
 .load__bar--3 {
   animation-delay: 600ms;
@@ -193,7 +202,7 @@ p {
 .load__bar--3-inv {
   animation-delay: 600ms;
   animation-direction: alternate-reverse;
-  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
+  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
 }
 .load__bar--4 {
   animation-delay: 800ms;
@@ -201,7 +210,7 @@ p {
 .load__bar--4-inv {
   animation-delay: 800ms;
   animation-direction: alternate-reverse;
-  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
+  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
 }
 .load__bar--5 {
   animation-delay: 1000ms;
@@ -209,7 +218,7 @@ p {
 .load__bar--5-inv {
   animation-delay: 1000ms;
   animation-direction: alternate-reverse;
-  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
+  background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
 }
 
 .search {
@@ -347,8 +356,51 @@ p {
   font-family: Shrikhand, sans-serif;
   font-size: 25px;
 }
+.menu h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.6;
+  margin: 20px 0 0 5px;
+  position: relative;
+  width: 40px;
+}
+.menu h2::after {
+  content: "";
+  height: 2px;
+  width: 85%;
+  position: absolute;
+  background: #99E2D0;
+  bottom: -8px;
+  left: 0;
+  max-width: 100px;
+}
+.menu h3 {
+  font-family: Roboto, sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 0 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu p {
+  font-size: 16px;
+  color: black;
+}
+.menu .btn-com {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(248, 248, 248);
+  padding: 40px;
+}
+.menu .btn-com .btn-gradient {
+  margin: 0;
+}
 .menu .rest-img {
-  height: 50vw;
+  height: 45vw;
 }
 .menu .rest-img img {
   width: 100%;
@@ -381,6 +433,86 @@ p {
 }
 .menu .menu-dishes .rest-title .heart-icon path:active {
   animation: heart-anim 2s ease-in-out forwards;
+}
+.menu .menu-dishes .bloc-dishes {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+  border-radius: 20px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.menu .menu-dishes .bloc-dishes .dishes-text {
+  width: 100%;
+  min-width: 0;
+}
+.menu .menu-dishes .bloc-dishes .dishes-text div {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 15px;
+}
+.menu .menu-dishes .bloc-dishes .dishes-text div .dishes-details {
+  opacity: 0.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu .menu-dishes .bloc-dishes .dishes-text div .dishes-price {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.menu .menu-dishes .bloc-dishes .dishes-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #99E2D0;
+  width: 0%;
+  border-radius: 0 20px 20px 0;
+  transition: all 2s;
+  transform: translateX(100%);
+}
+.menu .menu-dishes .bloc-dishes .dishes-check i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  transition: all 1s;
+}
+.menu .menu-dishes .bloc-dishes:active .dishes-check {
+  width: 25%;
+  transform: translateX(0);
+}
+.menu .menu-dishes .bloc-dishes:active i {
+  visibility: visible;
+  transform: rotate(-360deg);
+}
+.menu .appear_01 {
+  animation: appear 1.2s both;
+}
+.menu .appear_02 {
+  animation: appear 2.2s 0.5s both;
+}
+.menu .appear_03 {
+  animation: appear 2.7s 1s both;
+}
+.menu .main-appear_01 {
+  animation: appear 1s both;
+}
+.menu .main-appear_02 {
+  animation: appear 2s both;
+}
+.menu .main-appear_03 {
+  animation: appear 2.5s both;
 }
 
 footer {

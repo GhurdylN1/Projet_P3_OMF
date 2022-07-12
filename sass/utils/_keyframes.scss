@@ -54,3 +54,13 @@
       opacity: 100%;
     }
   }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(35%);
+    }
+    100% {
+      opacity: 1;
+    }
+  }

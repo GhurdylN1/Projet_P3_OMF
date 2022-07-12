@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-evenly;
       &__bar {
-          background-image: linear-gradient(to bottom, #FF79DA, #9356dc, #99E2D0);
+          background-image: linear-gradient(to bottom, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
           height: 100%;
           width: $size-load-bar;
           border-radius: 30px;
@@ -30,7 +30,7 @@
             &--#{$i}-inv {
               animation-delay: $anim-delay * $i;
               animation-direction: alternate-reverse;
-              background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
+              background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0); /*changer en variable !!*/
               
             }
           }
