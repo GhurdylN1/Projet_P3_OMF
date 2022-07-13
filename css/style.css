@@ -367,7 +367,7 @@ p {
 #restaurants .card-rest .heart-icon path {
   fill: transparent;
   stroke-width: 6;
-  stroke: grey;
+  stroke: rgb(0, 0, 0);
   stroke-dasharray: 1560;
   stroke-dashoffset: 0;
 }
@@ -453,7 +453,7 @@ p {
 .menu .menu-dishes .rest-title .heart-icon path {
   fill: transparent;
   stroke-width: 6;
-  stroke: grey;
+  stroke: rgb(0, 0, 0);
   stroke-dasharray: 1560;
   stroke-dashoffset: 0;
 }
