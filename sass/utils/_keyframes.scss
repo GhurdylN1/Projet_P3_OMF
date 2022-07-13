@@ -64,3 +64,14 @@
       opacity: 1;
     }
   }
+
+  @keyframes shake {
+    25% {
+      transform: translateX(5%);
+    }
+
+    75% {
+      transform: translateX(5% * -1);
+    }
+
+  }

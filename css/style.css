@@ -61,6 +61,14 @@
     opacity: 1;
   }
 }
+@keyframes shake {
+  25% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -304,6 +312,21 @@ p {
   margin-right: 15px;
   margin-left: 15px;
   height: 225px;
+  border-radius: 20px;
+}
+#restaurants .card-rest .new-ad {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: #99E2D0;
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: all 1s;
+}
+#restaurants .card-rest .new-ad p {
+  font-weight: bold;
+  color: #99E2D0;
+  filter: brightness(60%);
 }
 #restaurants .card-rest .card-rest-img {
   width: 100%;
@@ -330,6 +353,9 @@ p {
   transform: scale(1.02);
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   /*changer plus tard en variable - $btn-shadow-hover*/
+}
+#restaurants .card-rest:hover .new-ad {
+  animation: shake 200ms ease-in-out 2;
 }
 #restaurants .card-rest .heart-icon {
   position: absolute;

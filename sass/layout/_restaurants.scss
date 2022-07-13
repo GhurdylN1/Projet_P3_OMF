@@ -26,6 +26,24 @@
         margin-right: 15px;
         margin-left: 15px;
         height: 225px;
+        border-radius: 20px;
+
+        & .new-ad {
+           position: absolute;
+           right: 12px;
+           top: 12px;
+           background: $clr-tertiary;
+           border-radius: 3px;
+           padding: 5px 10px;
+           transition: all 1s;
+        
+           & p {
+             font-weight: bold;
+             color: $clr-tertiary;
+             filter: brightness(60%);
+           }
+
+        }
         
         & .card-rest-img {
             width: 100%;
@@ -56,6 +74,10 @@
             transform: scale(1.02);
             box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
             /*changer plus tard en variable - $btn-shadow-hover*/
+
+            & .new-ad {
+                animation: shake 200ms ease-in-out 2;
+            }
         }
         
         & .heart-icon {
