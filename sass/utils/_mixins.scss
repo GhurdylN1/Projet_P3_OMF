@@ -1,0 +1,19 @@
+@mixin bg-load-gradient-bottom {
+    background-image: linear-gradient(to bottom, #FF79DA, #9356dc, #99E2D0);
+}
+
+@mixin bg-load-gradient-top {
+    background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
+}
+
+@mixin bg-btn-gradient {
+    background-image: linear-gradient(to bottom, #FF79DA, #9356dc);
+}
+
+@mixin box-shadow {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@mixin box-shadow-hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}

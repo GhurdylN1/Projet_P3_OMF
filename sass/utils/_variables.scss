@@ -1,8 +1,11 @@
 $clr-primary: #9356DC;
 $clr-secondary: #FF79DA;
 $clr-tertiary: #99E2D0;
+$clr-bgd-prim: rgb(235, 235, 235);
+$clr-bgd-scd: rgb(248, 248, 248);
+$clr-footer: rgb(60, 60, 60);
 
 $size-load-bar: 10px;
 $num-bars: 5;
-$anim-dur: 1000ms;
+$anim-dur: 1s;
 $anim-delay: calc($anim-dur / 5)
