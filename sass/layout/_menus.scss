@@ -80,18 +80,6 @@
             & .heart-icon {
                 cursor: pointer;
                 width: 30px;
-
-                & path {
-                    fill: transparent;
-                    stroke-width: 6;
-                    stroke: rgb(0, 0, 0);
-                    stroke-dasharray: 1560;
-                    stroke-dashoffset: 0;
-
-                    &:active {
-                        animation: heart-anim 2s ease-in-out forwards;
-                    }
-                }
             }
         }
 

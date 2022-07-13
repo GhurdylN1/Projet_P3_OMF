@@ -9,11 +9,11 @@
     @include bg-btn-gradient;
     color: white;
     @include box-shadow;
+
     &:hover{
         @include box-shadow-hover;
     }
 }
-
 
 .bloc-function button{
     position: relative;
@@ -28,14 +28,34 @@
     font-weight: bold;
     color: rgba(0, 0, 0);
     @include box-shadow;
+
     & i{
         color: rgb(135, 135, 135);
     }
+
     &:hover{
         @include box-shadow-hover;
         background-color: rgba(147, 86, 220, 0.2);
+
         & i{
             color: $clr-primary;
         }
+    }
+}
+
+.heart-icon {
+    cursor: pointer;
+    width: 25px;
+
+    & path {
+      fill: transparent;
+      stroke-width: 6;
+      stroke: rgb(0, 0, 0);
+      stroke-dasharray: 1560;
+      stroke-dashoffset: 0;
+
+      &:active {
+        animation: heart-anim 2s ease-in-out forwards;
+      }
     }
 }

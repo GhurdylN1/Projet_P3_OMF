@@ -74,7 +74,7 @@
             @include box-shadow-hover;
             
             & .new-ad {
-                animation: shake 200ms ease-in-out 2;
+              animation: shake 200ms ease-in-out 2;
             }
         }
         
@@ -82,22 +82,10 @@
             position: absolute;
             bottom: 3px;
             right: 20px;
-            cursor: pointer;
-            width: 25px;
-            & path {
-              fill: transparent;
-              stroke-width: 6;
-              stroke: rgb(0, 0, 0);
-              stroke-dasharray: 1560;
-              stroke-dashoffset: 0;
-              &:active {
-                animation: heart-anim 2s ease-in-out forwards;
-              }
-            }
         }
        
     & .card-rest-img-text {
         margin: 15px 15px 0 15px;
     }
-}
+    }
 }

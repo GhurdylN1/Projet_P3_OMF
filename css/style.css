@@ -144,6 +144,21 @@ p {
   color: #9356DC;
 }
 
+.heart-icon {
+  cursor: pointer;
+  width: 25px;
+}
+.heart-icon path {
+  fill: transparent;
+  stroke-width: 6;
+  stroke: rgb(0, 0, 0);
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+.heart-icon path:active {
+  animation: heart-anim 2s ease-in-out forwards;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -359,18 +374,6 @@ p {
   position: absolute;
   bottom: 3px;
   right: 20px;
-  cursor: pointer;
-  width: 25px;
-}
-#restaurants .card-rest .heart-icon path {
-  fill: transparent;
-  stroke-width: 6;
-  stroke: rgb(0, 0, 0);
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-}
-#restaurants .card-rest .heart-icon path:active {
-  animation: heart-anim 2s ease-in-out forwards;
 }
 #restaurants .card-rest .card-rest-img-text {
   margin: 15px 15px 0 15px;
@@ -447,16 +450,6 @@ p {
 .menu .menu-dishes .rest-title .heart-icon {
   cursor: pointer;
   width: 30px;
-}
-.menu .menu-dishes .rest-title .heart-icon path {
-  fill: transparent;
-  stroke-width: 6;
-  stroke: rgb(0, 0, 0);
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-}
-.menu .menu-dishes .rest-title .heart-icon path:active {
-  animation: heart-anim 2s ease-in-out forwards;
 }
 .menu .menu-dishes .bloc-dishes {
   cursor: pointer;
