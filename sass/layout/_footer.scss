@@ -11,4 +11,10 @@ footer{
     & i{
         padding-right: 10px;
     }
+
+    @media screen and (min-width: 950px) {
+        align-items: center;
+    }
 }
+
+

@@ -89,3 +89,26 @@
     }
     }
 }
+
+@media screen and (min-width: 1150px) {
+
+    #restaurants {
+      align-content: center;
+      align-items: center;
+
+      .bloc-rest {
+        flex-wrap: unset;
+        gap: 1px;
+
+        .card-rest {
+            flex-direction: unset;
+            width: 50%;
+
+            & .heart-icon {
+                bottom: 20px;
+            }
+        }
+      }
+    }
+
+}
