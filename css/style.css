@@ -69,6 +69,11 @@
     transform: translateX(-5%);
   }
 }
+@keyframes stop-rotate {
+  0% {
+    transform: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -503,15 +508,16 @@ p {
   width: 25px;
   height: 25px;
   font-size: 20px;
-  transition: all 1s;
+  transition: all 0.9s;
 }
 .menu .menu-dishes .bloc-dishes:active .dishes-check {
-  width: 25%;
+  width: 30%;
   transform: translateX(0);
 }
 .menu .menu-dishes .bloc-dishes:active i {
   visibility: visible;
   transform: rotate(-360deg);
+  animation: stop-rotate 1s forwards;
 }
 .menu .appear_01 {
   animation: appear 1.2s both;

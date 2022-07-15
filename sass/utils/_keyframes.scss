@@ -75,3 +75,9 @@
     }
 
   }
+
+  @keyframes stop-rotate {
+    0%{
+      transform: none;
+    }
+  }
