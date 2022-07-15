@@ -138,13 +138,13 @@
                     border-radius: 50%;
                     width: 25px;
                     height: 25px;
-                    font-size: 20px;
+                    font-size: 18px;
                     transition: all 0.9s;
                 }
             }
 
             &:active .dishes-check {
-                width: 30%;
+                width: 25%;
                 transform: translateX(0);
             }
 
@@ -170,6 +170,10 @@
 
         &_03 {
             animation: appear 2.7s 1s both;
+        }
+
+        &_04 {
+            animation: appear 2.9s 1.5s both;
         }
     }
 

@@ -507,11 +507,11 @@ p {
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  font-size: 20px;
+  font-size: 18px;
   transition: all 0.9s;
 }
 .menu .menu-dishes .bloc-dishes:active .dishes-check {
-  width: 30%;
+  width: 25%;
   transform: translateX(0);
 }
 .menu .menu-dishes .bloc-dishes:active i {
@@ -527,6 +527,9 @@ p {
 }
 .menu .appear_03 {
   animation: appear 2.7s 1s both;
+}
+.menu .appear_04 {
+  animation: appear 2.9s 1.5s both;
 }
 .menu .main-appear_01 {
   animation: appear 1s both;
