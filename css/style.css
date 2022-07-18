@@ -408,9 +408,30 @@ p {
   #restaurants .bloc-rest .card-rest {
     flex-direction: unset;
     width: 50%;
+    height: auto;
   }
   #restaurants .bloc-rest .card-rest .heart-icon {
     bottom: 20px;
+  }
+}
+@media screen and (min-width: 1921px) and (min-height: 1081px) {
+  #restaurants .card-rest {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #restaurants .card-rest .card-rest-img {
+    max-height: 450px;
+  }
+  #restaurants .card-rest .card-rest-img .img-rest {
+    height: 75%;
+  }
+  #restaurants .card-rest .card-rest-img .card-rest-img-text {
+    margin-top: 45px;
+  }
+  #restaurants .card-rest .heart-icon {
+    bottom: 60px;
+    right: 28px;
+    width: 50px;
   }
 }
 .menu h1 {
@@ -523,7 +544,7 @@ p {
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0 20px 20px 0;
-  transition: all 1.5s;
+  transition: all 1s;
   transform: translateX(100%);
 }
 .menu .menu-dishes .bloc-dishes .dishes-check i {
@@ -537,7 +558,7 @@ p {
   width: 25px;
   height: 25px;
   font-size: 18px;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .menu .menu-dishes .bloc-dishes:active .dishes-check {
   width: 25%;
@@ -605,6 +626,14 @@ footer i {
 @media screen and (min-width: 950px) {
   footer {
     align-items: center;
+  }
+}
+@media screen and (min-width: 1921px) and (min-height: 1081px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 50px;
   }
 }
 

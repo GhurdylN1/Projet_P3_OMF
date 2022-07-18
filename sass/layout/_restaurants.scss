@@ -104,6 +104,7 @@
             .card-rest {
                 flex-direction: unset;
                 width: 50%;
+                height: auto;
 
                 & .heart-icon {
                     bottom: 20px;
@@ -112,4 +113,32 @@
         }
     }
 
+}
+
+@media screen and (min-width: 1921px) and (min-height: 1081px) {
+    #restaurants {
+
+        & .card-rest {
+            margin-left: 30px;
+            margin-right: 30px;
+
+            & .card-rest-img {
+                max-height: 450px;
+
+                & .img-rest {
+                    height: 75%;
+                }
+
+                & .card-rest-img-text {
+                    margin-top: 45px;
+                }
+            }
+
+            & .heart-icon {
+                bottom: 60px;
+                right: 28px;
+                width: 50px;
+            }
+        }
+    }
 }
