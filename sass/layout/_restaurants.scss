@@ -8,7 +8,7 @@
     background-color: $clr-bgd-scd;
 
     & h1 {
-     margin-left: 15px;
+        margin-left: 15px;
     }
 
     & .bloc-rest {
@@ -29,22 +29,22 @@
         border-radius: 20px;
 
         & .new-ad {
-           position: absolute;
-           right: 12px;
-           top: 12px;
-           background: $clr-tertiary;
-           border-radius: 3px;
-           padding: 5px 10px;
-           transition: all 1s;
-        
-           & p {
-             font-weight: bold;
-             color: $clr-tertiary;
-             filter: brightness(60%);
-           }
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            background: $clr-tertiary;
+            border-radius: 3px;
+            padding: 5px 10px;
+            transition: all 1s;
+
+            & p {
+                font-weight: bold;
+                color: $clr-tertiary;
+                filter: brightness(60%);
+            }
 
         }
-        
+
         & .card-rest-img {
             width: 100%;
             background-color: #fff;
@@ -62,53 +62,54 @@
                 height: 70%;
             }
 
-            & h2, p {
+            & h2,
+            p {
                 text-align: left;
                 margin-left: 15px;
             }
-        
-        } 
+
+        }
 
         &:hover {
             transform: scale(1.02);
             @include box-shadow-hover;
-            
+
             & .new-ad {
-              animation: shake 200ms ease-in-out 2;
+                animation: shake 200ms ease-in-out 2;
             }
         }
-        
+
         & .heart-icon {
             position: absolute;
             bottom: 3px;
             right: 20px;
         }
-       
-    & .card-rest-img-text {
-        margin: 15px 15px 0 15px;
-    }
+
+        & .card-rest-img-text {
+            margin: 15px 15px 0 15px;
+        }
     }
 }
 
 @media screen and (min-width: 1150px) {
 
     #restaurants {
-      align-content: center;
-      align-items: center;
+        align-content: center;
+        align-items: center;
 
-      .bloc-rest {
-        flex-wrap: unset;
-        gap: 1px;
+        .bloc-rest {
+            flex-wrap: unset;
+            gap: 1px;
 
-        .card-rest {
-            flex-direction: unset;
-            width: 50%;
+            .card-rest {
+                flex-direction: unset;
+                width: 50%;
 
-            & .heart-icon {
-                bottom: 20px;
+                & .heart-icon {
+                    bottom: 20px;
+                }
             }
         }
-      }
     }
 
 }

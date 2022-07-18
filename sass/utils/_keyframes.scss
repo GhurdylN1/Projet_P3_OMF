@@ -1,83 +1,92 @@
 @keyframes bars {
-    0% {
-      opacity: 0;
-      transform: scaleY(0.5);
-    }
-    25% {
-      opacity: 0.5;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: scaleY(1.0);
-      opacity: 0%;
-    }
-  }
-  
-  @keyframes apparition {
-     from {
-       opacity: 100%;
-     }
-     to {
-       opacity: 0%;
-       visibility: hidden;
-     }
+  0% {
+    opacity: 0;
+    transform: scaleY(0.5);
   }
 
-  @keyframes heart-anim {
-    0% {
-      stroke: $clr-primary;
-      stroke-width: 9;
-      stroke-dashoffset: 0;
-    }
-    25% {
-      stroke: $clr-primary;
-      stroke-dashoffset: 1560;
-      fill: transparent;
-    }
-    50% {
-      stroke: $clr-primary;
-      stroke-dashoffset: 3120;
-      fill: url(#lg-heart);
-      opacity: 15%
-    }
-    75%{
-      stroke-dashoffset: 3120;
-      stroke: none;
-      fill: url(#lg-heart);
-      opacity: 25%
-    }
-    100% {
-      stroke: none;
-      fill: url(#lg-heart);
-      opacity: 100%;
-    }
+  25% {
+    opacity: 0.5;
   }
 
-  @keyframes appear {
-    0% {
-      opacity: 0;
-      transform: translateY(35%);
-    }
-    100% {
-      opacity: 1;
-    }
+  50% {
+    opacity: 1;
   }
 
-  @keyframes shake {
-    25% {
-      transform: translateX(5%);
-    }
+  100% {
+    transform: scaleY(1.0);
+    opacity: 0%;
+  }
+}
 
-    75% {
-      transform: translateX(5% * -1);
-    }
-
+@keyframes apparition {
+  from {
+    opacity: 100%;
   }
 
-  @keyframes stop-rotate {
-    0%{
-      transform: none;
-    }
+  to {
+    opacity: 0%;
+    visibility: hidden;
   }
+}
+
+@keyframes heart-anim {
+  0% {
+    stroke: $clr-primary;
+    stroke-width: 9;
+    stroke-dashoffset: 0;
+  }
+
+  25% {
+    stroke: $clr-primary;
+    stroke-dashoffset: 1560;
+    fill: transparent;
+  }
+
+  50% {
+    stroke: $clr-primary;
+    stroke-dashoffset: 3120;
+    fill: url(#lg-heart);
+    opacity: 15%
+  }
+
+  75% {
+    stroke-dashoffset: 3120;
+    stroke: none;
+    fill: url(#lg-heart);
+    opacity: 25%
+  }
+
+  100% {
+    stroke: none;
+    fill: url(#lg-heart);
+    opacity: 100%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(35%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(5%);
+  }
+
+  75% {
+    transform: translateX(5% * -1);
+  }
+
+}
+
+@keyframes stop-rotate {
+  0% {
+    transform: none;
+  }
+}

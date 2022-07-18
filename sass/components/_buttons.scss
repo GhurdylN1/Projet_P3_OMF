@@ -1,4 +1,4 @@
-.btn-gradient{
+.btn-gradient {
     border: none;
     color: white;
     cursor: pointer;
@@ -10,12 +10,12 @@
     color: white;
     @include box-shadow;
 
-    &:hover{
+    &:hover {
         @include box-shadow-hover;
     }
 }
 
-.bloc-function button{
+.bloc-function button {
     position: relative;
     border: none;
     cursor: pointer;
@@ -29,15 +29,15 @@
     color: rgba(0, 0, 0);
     @include box-shadow;
 
-    & i{
+    & i {
         color: rgb(135, 135, 135);
     }
 
-    &:hover{
+    &:hover {
         @include box-shadow-hover;
         background-color: rgba(147, 86, 220, 0.2);
 
-        & i{
+        & i {
             color: $clr-primary;
         }
     }
@@ -48,14 +48,14 @@
     width: 25px;
 
     & path {
-      fill: transparent;
-      stroke-width: 6;
-      stroke: rgb(0, 0, 0);
-      stroke-dasharray: 1560;
-      stroke-dashoffset: 0;
+        fill: transparent;
+        stroke-width: 6;
+        stroke: rgb(0, 0, 0);
+        stroke-dasharray: 1560;
+        stroke-dashoffset: 0;
 
-      &:active {
-        animation: heart-anim 2s ease-in-out forwards;
-      }
+        &:active {
+            animation: heart-anim 2s ease-in-out forwards;
+        }
     }
 }

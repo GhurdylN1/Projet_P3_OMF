@@ -193,14 +193,13 @@ p {
   justify-content: center;
   animation: apparition 1.5s 3s ease-in-out forwards;
 }
-
-.load {
+.load-container .load {
   width: 80px;
   height: 80px;
   display: flex;
   justify-content: space-evenly;
 }
-.load__bar {
+.load-container .load__bar {
   background-image: linear-gradient(to bottom, #FF79DA, #9356dc, #99E2D0);
   height: 100%;
   width: 10px;
@@ -208,42 +207,42 @@ p {
   animation: bars 1s backwards ease-in-out alternate;
   animation-iteration-count: 4.5;
 }
-.load__bar--1 {
+.load-container .load__bar--1 {
   animation-delay: 0.2s;
 }
-.load__bar--1-inv {
+.load-container .load__bar--1-inv {
   animation-delay: 0.2s;
   animation-direction: alternate-reverse;
   background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
 }
-.load__bar--2 {
+.load-container .load__bar--2 {
   animation-delay: 0.4s;
 }
-.load__bar--2-inv {
+.load-container .load__bar--2-inv {
   animation-delay: 0.4s;
   animation-direction: alternate-reverse;
   background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
 }
-.load__bar--3 {
+.load-container .load__bar--3 {
   animation-delay: 0.6s;
 }
-.load__bar--3-inv {
+.load-container .load__bar--3-inv {
   animation-delay: 0.6s;
   animation-direction: alternate-reverse;
   background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
 }
-.load__bar--4 {
+.load-container .load__bar--4 {
   animation-delay: 0.8s;
 }
-.load__bar--4-inv {
+.load-container .load__bar--4-inv {
   animation-delay: 0.8s;
   animation-direction: alternate-reverse;
   background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
 }
-.load__bar--5 {
+.load-container .load__bar--5 {
   animation-delay: 1s;
 }
-.load__bar--5-inv {
+.load-container .load__bar--5-inv {
   animation-delay: 1s;
   animation-direction: alternate-reverse;
   background-image: linear-gradient(to top, #FF79DA, #9356dc, #99E2D0);
@@ -252,8 +251,7 @@ p {
 .search {
   display: block;
 }
-
-.location-search {
+.search .location-search {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -261,13 +259,11 @@ p {
   box-shadow: inset 0 3px 3px rgb(190, 190, 190);
   padding: 20px;
 }
-
-.fa-location-dot {
+.search .fa-location-dot {
   display: flex;
   justify-content: center;
 }
-
-.text-search {
+.search .text-search {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,8 +288,7 @@ p {
 .function-menu .bloc-function i {
   padding-right: 20px;
 }
-
-.numb-btn-function {
+.function-menu .bloc-function .numb-btn-function {
   position: absolute;
   color: white;
   width: 25px;
@@ -314,10 +309,12 @@ p {
     gap: 25px;
   }
   .function-menu .bloc-function {
-    display: flex;
     flex-direction: unset;
     gap: 80px;
     align-content: center;
+  }
+  .function-menu .bloc-function i {
+    padding-left: 20px;
   }
 }
 #restaurants {
@@ -378,7 +375,8 @@ p {
   object-fit: cover;
   height: 70%;
 }
-#restaurants .card-rest .card-rest-img h2, #restaurants .card-rest .card-rest-img p {
+#restaurants .card-rest .card-rest-img h2,
+#restaurants .card-rest .card-rest-img p {
   text-align: left;
   margin-left: 15px;
 }
@@ -525,7 +523,7 @@ p {
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0 20px 20px 0;
-  transition: all 2s;
+  transition: all 1.5s;
   transform: translateX(100%);
 }
 .menu .menu-dishes .bloc-dishes .dishes-check i {
